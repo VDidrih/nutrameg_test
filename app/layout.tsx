@@ -1,8 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Josefin_Sans, Young_Serif } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const josefinSans = Josefin_Sans({
+  weight: ["400", "600"],
+  subsets: ["latin"],
+  variable: "--font-josefin-sans",
+});
+
+const youngSerif = Young_Serif({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-young-serif",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +29,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className={`${youngSerif.variable} ${josefinSans.variable} font-josefinSans`}
+    >
+      <body>
+        {/* <Navbar /> */}
+        {children}
+        {/* <Footer /> */}
+      </body>
     </html>
   );
 }
