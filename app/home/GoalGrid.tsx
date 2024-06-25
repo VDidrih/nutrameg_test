@@ -19,9 +19,8 @@ const GoalGrid = ({ goals }: Props) => {
             return (
               <button
                 className={`text-[#444134] text-sm min-w-[200px]text-center whitespace-nowrap bg-[#BAD5C8] hover:bg-[#a7bfb4] focus:bg-[#7b9f8e]
-            ${
-              isLastAndOdd ? "col-span-2" : ""
-            } shadow-md hover:shadow-none text-white font-bold py-[18px] px-[16px] rounded`}
+                shadow-md hover:shadow-none font-bold py-[18px] px-[16px] rounded
+                ${isLastAndOdd ? "col-span-2" : ""} `}
                 key={index}
               >
                 <h1 className="text-[#444134]">{goal}</h1>

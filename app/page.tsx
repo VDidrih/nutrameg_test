@@ -1,8 +1,10 @@
+"use client"
+
 import Disclaimer from "./components/Disclaimer";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import GoalGrid from "./home/GoalGrid";
-import ResponsivBackground from "./home/ResponsivBackground";
+import ResponsiveBackground from "./home/ResponsiveBackground";
 
 const weightLossGoals = [
   "Lose 0-11 lbs",
@@ -19,7 +21,7 @@ export default function Home() {
       <div className="h-max md:h-screen w-full bg-[#E2E9E5] text-[#444134]">
         <div className="h-max md:h-screen flex flex-col justify-evenly items-center md:flex-row">
           <GoalGrid goals={weightLossGoals} />
-          <ResponsivBackground />
+          <ResponsiveBackground />
         </div>
       </div>
       <Disclaimer />

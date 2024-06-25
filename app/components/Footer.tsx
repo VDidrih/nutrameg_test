@@ -31,13 +31,23 @@ const Footer = ({}: Props) => {
         </p>
       </div>
       <div className="flex flex-col md:flex-row gap-8">
-        <div className="flex flex-row items-baseline">
+        <div className="flex flex-row items-baseline cursor-pointer">
           <div>TERMS OF SERVICE and POLICIES</div>
-          <Image className="ml-2" src={arrowRight} alt="arrow-right" width={7} />
+          <Image
+            className="ml-2"
+            src={arrowRight}
+            alt="arrow-right"
+            width={7}
+          />
         </div>
-        <div className="flex flex-row items-baseline">
+        <div className="flex flex-row items-baseline cursor-pointer">
           <div>TERMS OF SUBSCRIPTION SERVICES</div>
-          <Image className="ml-2" src={arrowRight} alt="arrow-right" width={7} />
+          <Image
+            className="ml-2"
+            src={arrowRight}
+            alt="arrow-right"
+            width={7}
+          />
         </div>
       </div>
       <p>

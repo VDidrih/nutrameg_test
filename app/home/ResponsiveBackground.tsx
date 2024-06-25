@@ -5,7 +5,7 @@ import smiling_lady from "../../public/images/web_smiling_lady.png";
 
 type Props = {};
 
-const ResponsivBackground = ({}: Props) => {
+const ResponsiveBackground = ({}: Props) => {
   return (
     <div className="relative">
       <div className="flex justify-center items-end w-full md:h-screen">
@@ -31,4 +31,4 @@ const ResponsivBackground = ({}: Props) => {
   );
 };
 
-export default ResponsivBackground;
+export default ResponsiveBackground;
